@@ -13,13 +13,14 @@ mypy = "*"
 black = "*"
 
 [packages]
+psycopg2 = "==2.7.7"
 psycopg2-binary = "==2.8.3"
 gunicorn = "*"
 django = "*"
 django-heroku = "*"
 djangorestframework = "*"
 line-bot-sdk = "*"
-psycopg2 = "==2.8.3"
+pipdeptree = "*"
 
 [requires]
 python_version = "3.7"
