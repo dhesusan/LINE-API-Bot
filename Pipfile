@@ -1,12 +1,25 @@
+[pipenv]
+allow_prereleases = true
+
 [[source]]
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+flake8 = "*"
+mypy = "*"
+black = "*"
 
 [packages]
+psycopg2-binary = "==2.8.3"
+gunicorn = "*"
 django = "*"
+django-heroku = "*"
+djangorestframework = "*"
+line-bot-sdk = "*"
+psycopg2 = "==2.8.3"
 
 [requires]
 python_version = "3.7"
