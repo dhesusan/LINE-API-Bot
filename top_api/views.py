@@ -21,6 +21,7 @@ from linebot.models import (
     CarouselTemplate,
     URITemplateAction
 )
+import traceback
 import os
 import requests
 import datetime
@@ -93,6 +94,7 @@ def handle_location(event):
             )
             
     except Exception as e:
+        traceback.print_exc()
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='時間をおいて再度お試しください。')
