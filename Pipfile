@@ -21,6 +21,7 @@ django-heroku = "*"
 djangorestframework = "*"
 line-bot-sdk = "*"
 pipdeptree = "*"
+google-api-python-client = "*"
 
 [requires]
 python_version = "3.7"
