@@ -72,7 +72,7 @@ def handle_location(event):
             hotels = result['hotels']
             columns = [
                 CarouselColumn(
-                    thumbnail_image_url=hotel[0]['hotelBasicInfo']['hotelimageUrl'],
+                    thumbnail_image_url=hotel[0]['hotelBasicInfo']['hotelImageUrl'],
                     title=hotel[0]['hotelBasicInfo']['hotelName'][:40],
                     text=hotel[0]['hotelBasicInfo']['hotelSpecial'][:60],
                     actions=[
