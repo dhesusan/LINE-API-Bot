@@ -21,14 +21,14 @@ from linebot.models import (
     CarouselTemplate,
     URITemplateAction
 )
-from configparser import ConfigParser
 import os
-import sys
 import requests
 import datetime
 
 YOUR_CHANNEL_ACCESS_TOKEN = os.environ["YOUR_CHANNEL_ACCESS_TOKEN"]
 YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
+RAKUTEN_APPLICATION_ID = os.environ("RAKUTEN_APPLICATION_ID")
+VACANT_HOTEL_SEARCH_URL = os.environ("VACANT_HOTEL_SEARCH_URL")
 
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
@@ -97,10 +97,6 @@ def handle_location(event):
             event.reply_token,
             TextSendMessage(text='時間をおいて再度お試しください。')
         )
-
-
-RAKUTEN_APPLICATION_ID = os.environ('RAKUTEN_APPLICATION_ID')
-VACANT_HOTEL_SEARCH_URL = os.environ('VACANT_HOTEL_SEARCH_URL')
 
 
 def search_vacant_hotel(event):
