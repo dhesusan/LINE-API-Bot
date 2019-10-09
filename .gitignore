@@ -126,4 +126,5 @@ dmypy.json
 .pyre/
 
 /.idea/
-
+heroku_command.txt
+generate_secretkey_setting.py

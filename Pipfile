@@ -22,6 +22,7 @@ djangorestframework = "*"
 line-bot-sdk = "*"
 pipdeptree = "*"
 google-api-python-client = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.7"
